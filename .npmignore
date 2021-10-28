@@ -1,0 +1,9 @@
+.storybook
+.gitignore
+.babelrc
+.eslintrc
+.npmignore
+
+coverage
+*.story.js
+*.test.js

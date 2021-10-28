@@ -1,0 +1,61 @@
+{
+  "name": "@zachguo/paperbag-ui",
+  "version": "1.0.0",
+  "description": "React.js UI elements with a focus on SEO & utility, not prettiness.",
+  "main": "./lib/index.js",
+  "module": "./src/index.js",
+  "scripts": {
+    "lint": "eslint --ext .js src",
+    "build": "rm -rf lib && babel src --out-dir lib && cp src/index.css lib/",
+    "prepublish": "npm run build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zachguo/paperbag-ui.git"
+  },
+  "keywords": [
+    "react",
+    "ui components"
+  ],
+  "author": "Zach Guo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zachguo/paperbag-ui/issues"
+  },
+  "homepage": "https://github.com/zachguo/paperbag-ui#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-export-default-from": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "@storybook/addon-actions": "^6.3.12",
+    "@storybook/addon-essentials": "^6.3.12",
+    "@storybook/addon-links": "^6.3.12",
+    "@storybook/react": "^6.3.12",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.18.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "peerDependencies": {
+    "prop-types": ">=15",
+    "react": ">=16",
+    "react-dom": ">=16"
+  },
+  "browserslist": [
+    ">0.2%",
+    "safari >= 9",
+    "ios_saf >= 9",
+    "not dead",
+    "not ie <= 9",
+    "not op_mini all"
+  ],
+  "dependencies": {}
+}
