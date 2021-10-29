@@ -6,7 +6,7 @@
   "module": "./src/index.js",
   "scripts": {
     "lint": "eslint --ext .js src",
-    "build": "rm -rf lib && babel src --out-dir lib && cp src/index.css lib/",
+    "build": "rm -rf lib && babel src --out-dir lib --copy-files --no-copy-ignored && rm -r lib/stories",
     "prepublish": "npm run build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"

@@ -1,11 +1,15 @@
 import React from 'react';
 import Button from '../components/button';
 import "../index.css";
+import "./stories.css";
 
 export default {
   title: 'Example/Button',
   component: Button,
-  argTypes: {}
+  argTypes: {},
+  args: {
+    text: 'Button'
+  }
 };
 
 const Template = (args) => (
@@ -17,18 +21,15 @@ const Template = (args) => (
 
 export const Primary = Template.bind({});
 Primary.args = {
-  type: 'primary',
-  text: 'Button'
+  type: 'primary'
 };
 
 export const Outline = Template.bind({});
 Outline.args = {
-  type: 'outline',
-  text: 'Button'
+  type: 'outline'
 };
 
 export const Clear = Template.bind({});
 Clear.args = {
-  type: 'clear',
-  text: 'Button'
+  type: 'clear'
 };

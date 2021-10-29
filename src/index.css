@@ -1,10 +1,17 @@
+:root {
+  --primary-color: #64dcbc;
+  --secondary-color: #385968;
+  --text-color: #ddeceb;
+  --bg-color: #2c2f33;
+  --bg-color-darker: #23272a;
+}
+
 /* Button */
-.button,
-button {
-  background-color: #64dcbc;
-  border: 0.1rem solid #64dcbc;
+.button {
+  background-color: var(--primary-color);
+  border: 0.1rem solid var(--primary-color);
   border-radius: 0.4rem;
-  color: #fff;
+  color: var(--text-color);
   cursor: pointer;
   display: inline-block;
   font-size: 1.1rem;
@@ -22,73 +29,58 @@ button {
 }
 
 .button:focus,
-.button:hover,
-button:focus,
-button:hover {
-  background-color: #385968;
-  border-color: #385968;
-  color: #fff;
+.button:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--text-color);
   outline: 0;
 }
 
-.button[disabled],
-button[disabled] {
+.button[disabled] {
   cursor: not-allowed;
   opacity: 0.5;
 }
 
 .button[disabled]:focus,
-.button[disabled]:hover,
-button[disabled]:focus,
-button[disabled]:hover {
-  background-color: #64dcbc;
-  border-color: #64dcbc;
+.button[disabled]:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
-.button.button-outline,
-button.button-outline {
+.button.button-outline {
   background-color: transparent;
-  color: #64dcbc;
+  color: var(--primary-color);
 }
 
 .button.button-outline:focus,
-.button.button-outline:hover,
-button.button-outline:focus,
-button.button-outline:hover {
+.button.button-outline:hover {
   background-color: transparent;
-  border-color: #385968;
-  color: #385968;
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .button.button-outline[disabled]:focus,
-.button.button-outline[disabled]:hover,
-button.button-outline[disabled]:focus,
-button.button-outline[disabled]:hover {
+.button.button-outline[disabled]:hover {
   border-color: inherit;
-  color: #64dcbc;
+  color: var(--primary-color);
 }
 
-.button.button-clear,
-button.button-clear {
+.button.button-clear {
   background-color: transparent;
   border-color: transparent;
-  color: #64dcbc;
+  color: var(--primary-color);
 }
 
 .button.button-clear:focus,
-.button.button-clear:hover,
-button.button-clear:focus,
-button.button-clear:hover {
+.button.button-clear:hover {
   background-color: transparent;
   border-color: transparent;
-  color: #385968;
+  color: var(--secondary-color);
 }
 
 .button.button-clear[disabled]:focus,
-.button.button-clear[disabled]:hover,
-button.button-clear[disabled]:focus,
-button.button-clear[disabled]:hover {
-  color: #64dcbc;
+.button.button-clear[disabled]:hover {
+  color: var(--primary-color);
 }
 
 /* Card */
@@ -98,10 +90,10 @@ button.button-clear[disabled]:hover {
   padding: 16px;
   margin: 8px 0;
   border-radius: 14px;
-  background: #2c2f33;
+  background: var(--bg-color);
   box-shadow: -7px -7px 16px #1b1e20, 7px 7px 16px #2b3034;
   transition: 0.3s;
-  color: #ddeceb;
+  color: var(--text-color);
 }
 
 a.card {
@@ -110,7 +102,7 @@ a.card {
 }
 a.card:focus,
 a.card:hover {
-  color: #385968;
-  background-color: #23272a;
+  color: var(--secondary-color);
+  background-color: var(--bg-color-darker);
   box-shadow: -12px -12px 24px #191b1d, 12px 12px 24px #2e3337;
 }

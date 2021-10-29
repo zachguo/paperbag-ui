@@ -8,6 +8,5 @@
         "loose": false
       }
     ]
-  ],
-  "ignore": ["**/*.test.js", "**/*.stories.jsx"]
+  ]
 }
