@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from "prop-types";
 
-const Button = ({ type = 'primary', text, onClick, disabled }) => {
+const Button = ({ type = 'primary', label, onClick, disabled }) => {
   const className = {
     primary: "button",
     outline: "button button-outline",
@@ -9,13 +9,13 @@ const Button = ({ type = 'primary', text, onClick, disabled }) => {
   }[type];
   return (
     <button type="button" className={className} onClick={onClick} disabled={disabled}>
-      {text}
+      {label}
     </button>
   );
 };
 Button.propTypes = {
   type: PropTypes.oneOf(['primary', 'outline', 'clear']).isRequired,
-  text: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
   onClick: PropTypes.func,
   disabled: PropTypes.bool
 };

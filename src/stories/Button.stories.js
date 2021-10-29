@@ -8,7 +8,7 @@ export default {
   component: Button,
   argTypes: {},
   args: {
-    text: 'Button'
+    label: 'Button'
   }
 };
 
