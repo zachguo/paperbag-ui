@@ -364,6 +364,31 @@ table {
   padding-left: 8;
 }
 
+/* Tabs */
+
+.tab-list {
+  padding: 0;
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.tab-list-item {
+  color: var(--secondary-color);
+  display: inline-block;
+  margin-bottom: -1px;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+}
+
+.tab-list-item-active {
+  color: var(--primary-color);
+  border: solid 1px;
+  border-color: var(--primary-color) var(--primary-color) var(--bg-color)
+    var(--primary-color);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
 /* General */
 
 *,
