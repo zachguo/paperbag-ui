@@ -1,7 +1,6 @@
 import React from 'react';
 import { Tabs, TabPane } from '../components/tabs';
 import "../index.css";
-import "./stories.css";
 
 export default {
   title: 'Example/Tabs',

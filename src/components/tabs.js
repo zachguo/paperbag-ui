@@ -23,7 +23,10 @@ const Tabs = ({ children, defaultActiveTab }) => {
   );
 };
 Tabs.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.element).isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element)
+  ]).isRequired,
   defaultActiveTab: PropTypes.string.isRequired
 };
 
@@ -35,7 +38,10 @@ const TabPane = ({ children, tab, tabLabel }) => {
   );
 };
 TabPane.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element)
+  ]).isRequired,
   tab: PropTypes.string.isRequired,
   tabLabel: PropTypes.string.isRequired
 };

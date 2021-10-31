@@ -1,7 +1,6 @@
 import React from 'react';
 import CheckBox from '../components/checkbox';
 import "../index.css";
-import "./stories.css";
 
 export default {
   title: 'Example/CheckBox',

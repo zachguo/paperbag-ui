@@ -1,6 +1,6 @@
 {
   "name": "@zachguo/paperbag-ui",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "React.js UI elements with a focus on SEO & utility, not prettiness.",
   "main": "./lib/index.js",
   "module": "./src/index.js",
@@ -26,12 +26,12 @@
   },
   "homepage": "https://github.com/zachguo/paperbag-ui#readme",
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.8.4",
-    "@babel/plugin-proposal-class-properties": "^7.8.3",
-    "@babel/plugin-proposal-export-default-from": "^7.8.3",
-    "@babel/preset-env": "^7.8.4",
-    "@babel/preset-react": "^7.8.3",
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-proposal-class-properties": "^7.16.0",
+    "@babel/plugin-proposal-export-default-from": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
     "@storybook/addon-actions": "^6.3.12",
     "@storybook/addon-essentials": "^6.3.12",
     "@storybook/addon-links": "^6.3.12",
@@ -41,8 +41,8 @@
     "eslint": "^5.16.0",
     "eslint-plugin-react": "^7.18.3",
     "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "peerDependencies": {
     "prop-types": ">=15",
@@ -56,6 +56,5 @@
     "not dead",
     "not ie <= 9",
     "not op_mini all"
-  ],
-  "dependencies": {}
+  ]
 }

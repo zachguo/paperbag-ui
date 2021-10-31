@@ -1,7 +1,6 @@
 import React from 'react';
 import Button from '../components/button';
 import "../index.css";
-import "./stories.css";
 
 export default {
   title: 'Example/Button',

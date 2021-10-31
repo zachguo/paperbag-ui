@@ -12,7 +12,10 @@ const Dialog = ({ visible, children }) => {
 };
 Dialog.propTypes = {
   visible: PropTypes.bool.isRequired,
-  children: PropTypes.element
-}
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element)
+  ]).isRequired
+};
 
 export default Dialog;

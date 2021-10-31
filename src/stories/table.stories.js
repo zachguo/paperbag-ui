@@ -1,7 +1,6 @@
 import React from 'react';
 import Table from '../components/table';
 import "../index.css";
-import "./stories.css";
 
 export default {
   title: 'Example/Table',

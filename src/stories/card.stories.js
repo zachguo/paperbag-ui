@@ -1,7 +1,6 @@
 import React from 'react';
 import Card from '../components/card';
 import "../index.css";
-import "./stories.css";
 
 export default {
   title: 'Example/Card',

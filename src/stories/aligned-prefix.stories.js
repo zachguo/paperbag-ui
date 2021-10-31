@@ -1,7 +1,6 @@
 import React from 'react';
 import AlignedPrefix from '../components/aligned-prefix';
 import "../index.css";
-import "./stories.css";
 
 export default {
   title: 'Example/AlignedPrefix',

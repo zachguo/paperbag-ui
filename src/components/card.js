@@ -7,7 +7,10 @@ const Card = ({ children, isLink = false }) => {
     : <div className="card">{children}</div>;
 };
 Card.propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element)
+  ]).isRequired,
   isLink: PropTypes.bool
 };
 
