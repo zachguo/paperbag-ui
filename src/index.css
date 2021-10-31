@@ -16,6 +16,8 @@
   --bg-color: #2c2f33;
   --bg-color-darker: #23272a;
   --bg-color-code: #44444c;
+  --shadow: -7px -7px 16px #1b1e20, 7px 7px 16px #2b3034;
+  --shadow-darker: -12px -12px 24px #191b1d, 12px 12px 24px #2e3337;
 }
 
 /* Button */
@@ -167,7 +169,7 @@ input[type="submit"].button-clear[disabled]:hover {
   margin: 8px 0;
   border-radius: 14px;
   background: var(--bg-color);
-  box-shadow: -7px -7px 16px #1b1e20, 7px 7px 16px #2b3034;
+  box-shadow: var(--shadow);
   transition: 0.3s;
   color: var(--text-color);
 }
@@ -180,7 +182,32 @@ a.card:focus,
 a.card:hover {
   color: var(--secondary-color);
   background-color: var(--bg-color-darker);
-  box-shadow: -12px -12px 24px #191b1d, 12px 12px 24px #2e3337;
+  box-shadow: var(--shadow-darker);
+}
+
+/* Dialog */
+.dialog-wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 998;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dialog {
+  z-index: 999;
+  background-color: var(--bg-color);
+  max-width: 90%;
+  max-height: 90%;
+  min-width: 300px;
+  box-shadow: var(--shadow);
+  border-radius: 4px;
+  padding: 16px;
+  overflow: auto;
 }
 
 /* Table */
