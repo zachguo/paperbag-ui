@@ -357,6 +357,13 @@ table {
   align-items: center;
 }
 
+.tagline {
+  opacity: 0.8;
+  font-size: 0.8em;
+  border-left: 2px solid var(--primary-color);
+  padding-left: 8;
+}
+
 /* General */
 
 *,
