@@ -319,6 +319,44 @@ table {
   }
 }
 
+/* Aligned Prefix */
+.aligned-prefix-table {
+  display: inline-table;
+}
+.aligned-prefix-table > div {
+  display: table-row;
+}
+.aligned-prefix-table > div > div:first-child {
+  display: table-cell;
+  vertical-align: middle;
+}
+.aligned-prefix-table > div > div:first-child > img {
+  vertical-align: middle;
+}
+.aligned-prefix-table > div > div:last-child {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+  padding-left: 8px;
+}
+
+.aligned-prefix-flexbox {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+}
+.aligned-prefix-flexbox > div:first-child {
+  flex-shrink: 0;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+}
+.aligned-prefix-flexbox > div:last-child {
+  display: flex;
+  align-items: center;
+}
+
 /* General */
 
 *,
