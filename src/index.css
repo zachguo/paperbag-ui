@@ -17,7 +17,8 @@
   --bg-color-darker: #23272a;
   --bg-color-code: #44444c;
   --shadow: -7px -7px 16px #1b1e20, 7px 7px 16px #2b3034;
-  --shadow-darker: -12px -12px 24px #191b1d, 12px 12px 24px #2e3337;
+  --shadow-sm: -4px -4px 8px #1b1e20, 4px 4px 8px #2b3034;
+  --shadow-lg: -12px -12px 24px #191b1d, 12px 12px 24px #2e3337;
 }
 
 /* Button */
@@ -182,7 +183,7 @@ a.card:focus,
 a.card:hover {
   color: var(--secondary-color);
   background-color: var(--bg-color-darker);
-  box-shadow: var(--shadow-darker);
+  box-shadow: var(--shadow-lg);
 }
 
 /* Dialog */
@@ -225,6 +226,100 @@ table {
     overflow-x: initial;
   }
 }
+
+@media (min-width: 40rem) {
+  .table {
+    border-collapse: separate;
+    border-spacing: 0 16px;
+  }
+  .th {
+    padding: 8px 4px;
+    font-weight: 200;
+    opacity: 0.8;
+  }
+  .tbody .tr {
+    box-shadow: -7px -7px 16px #1b1e20, 7px 7px 16px #2b3034;
+  }
+  .tbody .td {
+    background: #2c2f33;
+    padding: 8px 4px;
+  }
+  .tbody .tr .td:first-child {
+    padding-left: 12px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+  }
+  .tbody .tr .td:last-child {
+    padding-right: 12px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+  }
+}
+
+@media (max-width: 40rem) {
+  /* more compact style */
+  .table {
+    border-collapse: separate;
+    border-spacing: 0 8px;
+  }
+  .th {
+    padding: 4px;
+    font-weight: 200;
+    opacity: 0.8;
+  }
+  .tbody .tr {
+    box-shadow: var(--shadow-sm);
+  }
+  .tbody .td {
+    background: var(--bg-color);
+    padding: 4px;
+  }
+  .tbody .tr .td:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  .tbody .tr .td:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  /* reorient table to vertical style when screen is small */
+  .table.reorientable,
+  .reorientable .tbody,
+  .reorientable .tr,
+  .reorientable .td {
+    display: block;
+  }
+  .reorientable .thead {
+    display: none;
+  }
+  .reorientable .tr {
+    padding: 16px;
+    margin: 8px 0;
+    border-radius: 14px;
+    background: var(--bg-color);
+    box-shadow: var(--shadow);
+  }
+  .reorientable .td {
+    position: relative;
+    text-align: left;
+    padding-left: 31%; /* arbitrary */
+  }
+  .reorientable .td:before {
+    content: attr(data-label);
+    position: absolute;
+    padding: 4px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 30%; /* arbitrary */
+    text-align: left;
+    font-weight: 200;
+    opacity: 0.8;
+  }
+}
+
+/* General */
 
 *,
 *:after,
