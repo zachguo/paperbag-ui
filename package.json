@@ -1,6 +1,6 @@
 {
   "name": "@zachguo/paperbag-ui",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "React.js UI elements with a focus on SEO & utility, not prettiness.",
   "main": "./lib/index.js",
   "module": "./src/index.js",
